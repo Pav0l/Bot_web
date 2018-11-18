@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Bot Settings</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<h1>Trading with Python</h1>
+	<p> Please set up your settings for the bot.</p>
+	<div id="wrapper">
+		<div id="form">
+			<form method="POST">
+					<label>Select a currency pair: </label> 
+						<select>
+							<option value="XBTUSD">XBTUSD</option>
+							<option value="ETHUSD">ETHUSD</option>
+						</select> <br>				
+					<label> Select a time interval: </label>
+						<select>
+							<option value="5m">5m</option>
+							<option value="1h">1h</option>
+							<option value="1d">1d</option>
+						</select> <br>
+					<label>Enter an ENTRY period for the trade: </label> <input type="text" name="entry_period" placeholder="number of intervals"> <br>
+					<label>Enter an EXIT period for the trade: </label>  <input type="text" name="exit_period" placeholder="number of intervals"> <br>
+					<label>Enter a STOP-LOSS multiplier: </label> <input type="text" name="stop_loss_multiplier" placeholder="multiplier * ATR"> <br>
+					<label>Enter the accepted risk per trade: </label> <input type="text" name="risk_per_trade" placeholder="% of equity risk in trade"><br>
+      				<input type="submit" value="Submit">
+			</form>
+		</div>
+
+	</div>		
+</body>
+</html>
